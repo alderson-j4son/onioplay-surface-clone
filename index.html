@@ -1,701 +1,1542 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
-        <section id="header">
-            <div class="logo-header">
-                <img src="images/logo_onionplay.png" alt="">
-            </div>
-            <nav>
-                <ul class="nav-bar">
-                    <li class="nav-item"><a class="nav-link" href="">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">TVShows</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Episodes</a></li>
-                    <li class="nav-item dropdown-btn"><a class="nav-link " href="">Genres <i class="fa fa-caret-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Action</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Adventure</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Animation</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Comedy</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Crime</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Documentary</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Drama</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Family</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Fantasy</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>History</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Horror</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Music</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Mystery</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Reality</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Romance</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Sci-Fi</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Thriller</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>War</a></li>
-                            <li class="menu-item"><a href=""><i class="fa fa-caret-right"></i>Western</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="">Release</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">TOP 50</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">A-Z</a></li>
-                    <li class="nav-item"><a class="nav-link active-a" href="">4K</a></li>
-                </ul>
-                
-            </nav>
-            <div class="log-in">
-                <div class="icone">
-                    <i class="fa fa-user-circle"></i>
-                </div>
-            </div>
-        </section>
-        <section id="module">
-            <div class="home-logo">
-                <a href="">
-                    <img src="images/logo_onionplay_home.png" alt="">
-                </a>
-            </div>
-            <div class="search-box">
-                <div class="search-box-form">
-                    <input placeholder="Search Here..." class="inp-search" type="search">
-                    <button class="search-btn"><i class="fa fa-search"></i></button>
-
-                </div>
-            </div>
-            <div class="discription">
-                <h1>
-                    <strong>OnionPlay</strong> – The Best Place to Watch Free Movies and TVShows Online
-
-                </h1>
-                <p>
-                    Movie and TVShow fans now have a place, where they can find all their favorite flicks.<br>
-                    Would you like to get an exclusive access to all the major blockbusters of the recent years?<br>
-                    Everybody wants to see a great movie with his friends and family every once in a while and <strong> <a href="">OnionPlay</a></strong> is the exact place for that!<br>
-                    Start by Searching or by Navigating the <strong> <a href="">OnionPlay</a></strong> Top Menu, You will find something to Watch in a matter of seconds!<br>
-
-                </p>
-                <div class="dis-logo">
-                    <a href="">
-                        <img src="images/onion-discord.webp" alt="">
-
-                    </a>
-                </div>
-            </div>
-        </section>
-        <div class="section-title">
-            <h3><a href=""> Featured - Most Watched </a></h3>
-
+  </head>
+  <body>
+    <section id="header">
+      <div class="logo-header">
+        <img src="images/logo_onionplay.png" alt="" />
+      </div>
+      <nav>
+        <ul class="nav-bar">
+          <li class="nav-item"><a class="nav-link" href="">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="">TVShows</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Episodes</a></li>
+          <li class="nav-item dropdown-btn">
+            <a class="nav-link" href=""
+              >Genres <i class="fa fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Action</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Adventure</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Animation</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Comedy</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Crime</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Documentary</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Drama</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Family</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Fantasy</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>History</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Horror</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Music</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Mystery</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Reality</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Romance</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Sci-Fi</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Thriller</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>War</a>
+              </li>
+              <li class="menu-item">
+                <a href=""><i class="fa fa-caret-right"></i>Western</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">Release</a></li>
+          <li class="nav-item"><a class="nav-link" href="">TOP 50</a></li>
+          <li class="nav-item"><a class="nav-link" href="">A-Z</a></li>
+          <li class="nav-item"><a class="nav-link active-a" href="">4K</a></li>
+        </ul>
+      </nav>
+      <div class="log-in">
+        <div class="icone">
+          <i class="fa fa-user-circle"></i>
         </div>
-        <section id="most-watches">
-           
-            <articale id="post-featured" class="itemmovie tvshows">
-                <div class="poster">
-                    <img src="images/8.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/04/sqLowacltbZLoCa4KYye64RvvdQ-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Uncharted  2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/7qop80YfuO0BwJa1uXk1DXUUEwv-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> The Bad Guys  2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie tvshows">
-                <div class="poster">
-                    <img src="images/8.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/04/sqLowacltbZLoCa4KYye64RvvdQ-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Uncharted  2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/7qop80YfuO0BwJa1uXk1DXUUEwv-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> The Bad Guys  2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Doctor Strange 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/04/jrgifaYeUtTnaH7NF5Drkgjg2MB-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Fantastic Beasts 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie tvshows">
-                <div class="poster">
-                    <img src="images/8.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Doctor Strange 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/04/jrgifaYeUtTnaH7NF5Drkgjg2MB-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Fantastic Beasts 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie tvshows">
-                <div class="poster">
-                    <img src="images/8.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">Featured</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-           
-            
-            
-        </section>
-        <div class="line-section1"></div>
-        <div class="section-title lastest">
-            <h3><a href=""> Latest Movies </a></h3>
-            <button class="">see all</button>
-
+      </div>
+    </section>
+    <section id="module">
+      <div class="home-logo">
+        <a href="">
+          <img src="images/logo_onionplay_home.png" alt="" />
+        </a>
+      </div>
+      <div class="search-box">
+        <div class="search-box-form">
+          <input
+            placeholder="Search Here..."
+            class="inp-search"
+            type="search"
+          />
+          <button class="search-btn"><i class="fa fa-search"></i></button>
         </div>
-        <!-- lastest-moviess -->
-        <section id="most-watches" class="lastest-movie">
-
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-            <articale id="post-featured" class="itemmovie items">
-                <div class="poster">
-                    <img src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg" alt="">
-                    <div class="rating"><i class="fa fa-star"></i> 9.5</div>
-                    <div class="featu">HD</div>
-                    <a class="hov-play-a" href="">
-                        <div class="hov-play"></div>
-                    </a>
-                </div>
-                <div class="title-of-movie">
-                    <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
-                    <span class="date-ecran">2022</span>
-                </div>
-            </articale>
-
-        </section>
-        
-</body>
+      </div>
+      <div class="discription">
+        <h1>
+          <strong>OnionPlay</strong> – The Best Place to Watch Free Movies and
+          TVShows Online
+        </h1>
+        <p>
+          Movie and TVShow fans now have a place, where they can find all their
+          favorite flicks.<br />
+          Would you like to get an exclusive access to all the major
+          blockbusters of the recent years?<br />
+          Everybody wants to see a great movie with his friends and family every
+          once in a while and <strong> <a href="">OnionPlay</a></strong> is the
+          exact place for that!<br />
+          Start by Searching or by Navigating the
+          <strong> <a href="">OnionPlay</a></strong> Top Menu, You will find
+          something to Watch in a matter of seconds!<br />
+        </p>
+        <div class="dis-logo">
+          <a href="">
+            <img src="images/onion-discord.webp" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="section-title">
+      <h3><a href=""> Featured - Most Watched </a></h3>
+    </div>
+    <section id="most-watches">
+      <articale id="post-featured" class="itemmovie tvshows">
+        <div class="poster">
+          <img src="images/8.jpg" alt="" />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/04/sqLowacltbZLoCa4KYye64RvvdQ-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Uncharted 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/7qop80YfuO0BwJa1uXk1DXUUEwv-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> The Bad Guys 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie tvshows">
+        <div class="poster">
+          <img src="images/8.jpg" alt="" />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/04/sqLowacltbZLoCa4KYye64RvvdQ-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Uncharted 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/7qop80YfuO0BwJa1uXk1DXUUEwv-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> The Bad Guys 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Doctor Strange 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/04/jrgifaYeUtTnaH7NF5Drkgjg2MB-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name">
+            <a href=""> Fantastic Beasts 2022 </a></span
+          >
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie tvshows">
+        <div class="poster">
+          <img src="images/8.jpg" alt="" />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Doctor Strange 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/04/jrgifaYeUtTnaH7NF5Drkgjg2MB-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name">
+            <a href=""> Fantastic Beasts 2022 </a></span
+          >
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie tvshows">
+        <div class="poster">
+          <img src="images/8.jpg" alt="" />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">Featured</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+    </section>
+    <div class="line-section1"></div>
+    <div class="section-title lastest">
+      <h3><a href=""> Latest Movies </a></h3>
+      <button class="">see all</button>
+    </div>
+    <!-- lastest-moviess=============================================================================================== -->
+    <section id="most-watches" class="lastest-movie">
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/kY0AKRdYuaahPMcQL2jIxXRHvgf-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/wRnbWt44nKjsFPrqSmwYki5vZtF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+    </section>
+    <div class="line-section1"></div>
+    <!-- lastest-tvshows========================================================================================================= -->
+    <div class="section-title lastest">
+      <h3><a href=""> Latest TV Shows </a></h3>
+      <button class="">see all</button>
+    </div>
+    <section id="most-watches" class="lastest-movie">
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/89frnVwEKRbkYLqJ0t8xSvlfnEL-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/juwOjcai3aYJvybwAhLS79miHq1-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/dCSmm9aRal83ql1QbCujIKyoqGl-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/4jSaIqEU8CPBBNn4iVCK6wzPjSx-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/lSVygN5ZLmSMycBTe94umdKfTSd-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/gEIrHezGOp0xtIU7FLTMwt0ecIc-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/9Z7L7wSB6nLwWk7coUgm1ytQbOB-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/gHBtyMdHbWoM3tpM8VZymer8HfF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> Moon Knight 2022 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+    </section>
+    <div class="line-section1"></div>
+    <!-- lastest-seasons========================================================================================================= -->
+    <div class="section-title lastest">
+      <h3><a href=""> Latest seasens </a></h3>
+      <button class="">see all</button>
+    </div>
+    <section id="most-watches" class="lastest-movie">
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/89frnVwEKRbkYLqJ0t8xSvlfnEL-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">1</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-1</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 1 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/juwOjcai3aYJvybwAhLS79miHq1-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">1</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-1</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 1 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/dCSmm9aRal83ql1QbCujIKyoqGl-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">3</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-3</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 3 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/4jSaIqEU8CPBBNn4iVCK6wzPjSx-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">1</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-1</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 1 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/lSVygN5ZLmSMycBTe94umdKfTSd-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">1</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-1</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 1 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/gEIrHezGOp0xtIU7FLTMwt0ecIc-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">2</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-2</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 2 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/jrWM82Hie9DAkoDzXh3pxAFwf9d-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">1</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-1</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 1 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/9Z7L7wSB6nLwWk7coUgm1ytQbOB-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">3</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-3</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 3 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/gHBtyMdHbWoM3tpM8VZymer8HfF-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">1</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-1</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 1 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie items">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/iwIdajr5Y4zq2ibvq75VnDAJBr-500x750.jpg"
+            alt=""
+          />
+          <div class="rating"><i class="fa fa-star"></i> 9.5</div>
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-seasen">
+              <div class="dic-hov">
+                <span class="seasen">1</span>
+                <span class="title-of-tvshow">candy</span>
+                <span class="title-dic">seasen-1</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> seasen 1 </a></span>
+          <span class="date-ecran">2022</span>
+        </div>
+      </articale>
+    </section>
+    <div class="line-section1"></div>
+    <!-- lastest-episodes========================================================================================================= -->
+    <div class="section-title lastest">
+      <h3><a href=""> Latest Episodes </a></h3>
+      <button class="">see all</button>
+    </div>
+    <section id="lastest-episodes">
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/flVUI98wSTtLmYDCx81gowleQTe.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/AkSS0MyRpjbQ6WrOhIwQw4t7Ea8.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/sQRAO2tNjmjWUSmitDtqf5VMMfH.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/cuBwdj9rc1EhqGHSC13rqx8R4c3.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/laWrfyEid4inDtmIa6Vkh6VhWPG.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/7GqWHlGNnBp5DwxRq9JD1mhcftG.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/xH5uaLaljWGQ8WOg4mNAiucovB1.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/eC2tUit9W7eaTuRla2nxvNKIKDv.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/xWiqCYroKTTWioeoCAunzwh4xYt.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/lro33knzf2sqtbd1gpipg0O2fR3.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/fVt68Wmhrr38Z7WgyXbX6N1KPls.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+      <articale id="post-featured" class="itemmovie itemepisode">
+        <div class="poster">
+          <img
+            src="https://onionplay-network.stream/2022/05/PWT12VsJkY1bvDEf2pXAIflauX.jpg"
+            alt=""
+          />
+          <div class="featu">HD</div>
+          <a class="hov-play-a" href="">
+            <div class="hov-play"></div>
+          </a>
+        </div>
+        <div class="title-of-movie">
+          <span class="movie-name"> <a href=""> bright </a></span>
+          <span class="date-ecran">S1 E3 / May 23rd,2022</span>
+          <span class="tvshow-name">Moonknight</span>
+        </div>
+      </articale>
+    </section>
+    <div class="line-section1" style="width: 100%"></div>
+    <!-- foooooooooooooteeeeeeeeeeeeeeeeeeeeer==============================================================-->
+    <section id="footer">
+      <div class="about-onion-fot">
+        <div class="onion">
+          <img
+            src="https://onionplay-network.stream/img/logo_onionplay_se.png"
+            alt=""
+          />
+          <p class="onion-dic">
+            OnionPlay does not store any files itself, we only link<br />
+            to media which is hosted on 3rd party services.<br />
+            <strong>
+              OnionPlay is ADS-FREE and always will Be, Be<br />
+              Aware of clones or fake copies!
+            </strong>
+          </p>
+        </div>
+        <div class="other-things">
+          <table>
+            <tr>
+              <th>Social</th>
+              <th>Links</th>
+              <th>Legal</th>
+            </tr>
+            <tr>
+              <td><a href="">Official Domains</a></td>
+              <td><a href="">Featured Releases</a></td>
+              <td><a href="">Terms of Service</a></td>
+            </tr>
+            <tr>
+              <td><a href="">Twitter</a></td>
+              <td><a href="">How to Watch</a></td>
+              <td><a href="">Privacy Policy</a></td>
+            </tr>
+            <tr>
+              <td><a href="">Reddit</a></td>
+              <td><a href="">Updates</a></td>
+              <td><a href="">DMCA</a></td>
+            </tr>
+            <tr>
+              <td><a href="">Discord</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="under-fot">
+        <div class="name-of-all">OnionPlay</div>
+        <div class="footer-btns">
+          <a class="donate-btn" href="">Donate</a>
+          <a class="drop-btn" href="#header"> <i class="fa fa-angle-up"></i></a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
